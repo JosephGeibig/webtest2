@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- Search-replace "[Company Name]" throughout. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Ecoform</title>
+<meta name="description" content="Why [Company Name] exists, how we work with clients, and who's behind the studies we publish.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <img src="assets/logo.png" width=50>
+      </svg>
+      Ecoform
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="about.html" class="active">About</a>
+          <ul class="dropdown">
+            <li><a href="about.html#why-we-exist">Why We Exist</a></li>
+            <li><a href="about.html#how-we-serve">How We Serve</a></li>
+            <li><a href="people.html">Meet the Team</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="services.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="services.html#lca">Life Cycle Assessment</a></li>
+            <li><a href="services.html#epd">Environmental Product Declarations</a></li>
+            <li><a href="services.html#carbon">Carbon Footprinting</a></li>
+            <li><a href="services.html#esg">ESG Advisory</a></li>
+            <li><a href="verification.html">Verification &amp; Critical Review</a></li>
+          </ul>
+        </li>
+        <li><a href="industries.html">Industries</a></li>
+        <li class="has-dropdown">
+          <a href="resources.html">Resources</a>
+          <ul class="dropdown">
+            <li><a href="resources.html#faq">FAQ</a></li>
+            <li><a href="resources.html#standards">Standards Library</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="index.html#contact" class="nav-cta">Start a project</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('mobile-open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <section class="hero">
+    <div class="wrap page-hero">
+      <span class="eyebrow">About Us</span>
+      <h1>Consultants first. Practitioners second only to that.</h1>
+      <p class="lead">[Company Name] was founded on a simple idea: environmental claims should be able to survive scrutiny. We help manufacturers and brands build that rigor in from the start.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- WHY WE EXIST -->
+  <section id="why-we-exist">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Why we exist</span>
+        <h2>Sustainability claims are only as good as the study behind them.</h2>
+        <p>Too many environmental claims are built on assumptions rather than measured data — and it shows the moment a customer, auditor, or regulator asks a follow-up question. We started [Company Name] to close that gap: rigorous, ISO-aligned assessment work that holds up when it's tested.</p>
+        <p>That means being honest about uncertainty, transparent about methodology, and willing to tell a client when their product's numbers don't support the claim they want to make.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE SERVE -->
+  <section id="how-we-serve" class="approach">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How we serve</span>
+        <h2>Two ways to work with us, depending on how much you already have in-house.</h2>
+        <p>Some clients need a single study delivered well. Others need an ongoing partner who acts as their sustainability team. We do both.</p>
+      </div>
+      <div class="model-grid">
+        <div class="model-card">
+          <span class="eyebrow">Project-Based</span>
+          <h3>A specific study, delivered end to end</h3>
+          <p>You know what you need — an LCA, an EPD, a carbon footprint — and we scope, model, and deliver it on a defined timeline, ready for internal use or external publication.</p>
+        </div>
+        <div class="model-card">
+          <span class="eyebrow">Ongoing Partnership</span>
+          <h3>An extension of your sustainability team</h3>
+          <p>We take on a recurring role — managing your EPD program, running annual carbon inventories, or serving as your named LCA practitioner across a growing product line.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section id="who-we-are">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Who we are</span>
+        <h2>A small team of certified practitioners, not a call center.</h2>
+        <p>Every engagement is led by a named ACLCA-certified practitioner who stays with the project from scoping through final report — not handed off between account managers and analysts you never meet.</p>
+        <a href="people.html" class="btn btn-ghost">Meet the team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Ready to talk about your product or program?</h2>
+        <p>Most engagements start with a short scoping call — no cost, no obligation.</p>
+      </div>
+      <a href="index.html#contact" class="btn btn-primary">Get in touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© 2026 Ecoform. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="resources.html">Resources</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- Search-replace "[Company Name]" throughout. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources — Ecoform</title>
+<meta name="description" content="FAQs and a standards library covering LCA, EPDs, and sustainability reporting, from [Company Name].">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <img src="assets/logo.png" width=50>
+      </svg>
+      Ecoform
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="about.html">About</a>
+          <ul class="dropdown">
+            <li><a href="about.html#why-we-exist">Why We Exist</a></li>
+            <li><a href="about.html#how-we-serve">How We Serve</a></li>
+            <li><a href="people.html">Meet the Team</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="services.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="services.html#lca">Life Cycle Assessment</a></li>
+            <li><a href="services.html#epd">Environmental Product Declarations</a></li>
+            <li><a href="services.html#carbon">Carbon Footprinting</a></li>
+            <li><a href="services.html#esg">ESG Advisory</a></li>
+            <li><a href="verification.html">Verification &amp; Critical Review</a></li>
+          </ul>
+        </li>
+        <li><a href="industries.html">Industries</a></li>
+        <li class="has-dropdown">
+          <a href="resources.html" class="active">Resources</a>
+          <ul class="dropdown">
+            <li><a href="resources.html#faq">FAQ</a></li>
+            <li><a href="resources.html#standards">Standards Library</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="index.html#contact" class="nav-cta">Start a project</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('mobile-open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <section class="hero">
+    <div class="wrap page-hero">
+      <span class="eyebrow">Resources</span>
+      <h1>Straight answers on LCA, EPDs, and sustainability reporting.</h1>
+      <p class="lead">No gated whitepapers, no jargon for jargon's sake — just plain-language explanations of the standards and methodology behind our work.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Common questions about the assessment process.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>What's the difference between an LCA and an EPD?</summary>
+          <p>A Life Cycle Assessment (LCA) is the underlying technical study that quantifies environmental impacts across a product's life cycle. An Environmental Product Declaration (EPD) is a standardized, publishable document that reports the results of an LCA in a format defined by a program operator — it's the public-facing output, not the study itself.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How long does a Life Cycle Assessment take?</summary>
+          <p>Most single-product LCAs take 8–12 weeks from data collection to final report, depending on supply chain complexity and how much primary data you already have available. Multi-product or first-time programs typically take longer.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need critical review for my EPD?</summary>
+          <p>Most EPD program operators require independent critical review before publication, and any study supporting a public comparative assertion needs it under ISO 14044. We can tell you what your specific program operator requires during scoping.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What standards do you follow?</summary>
+          <p>Every study follows ISO 14040 and 14044 for LCA methodology, and ISO 14025 for EPDs. Depending on your goals, we also work within GHG Protocol, CSRD/ESRS, and specific program operator requirements (UL, NSF, SCS, ASTM).</p>
+        </details>
+        <details class="faq-item">
+          <summary>What data do you need from us to get started?</summary>
+          <p>At minimum, a bill of materials and information on your manufacturing process and energy use. The more primary data you can provide — supplier-specific energy and material data — the less we rely on industry-average datasets, which strengthens the study.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- STANDARDS LIBRARY -->
+  <section id="standards" class="approach">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Standards library</span>
+        <h2>The frameworks behind our studies, explained plainly.</h2>
+      </div>
+      <div class="standards-lib">
+        <div class="standards-lib-item">
+          <span class="code">ISO 14040</span>
+          <h4>LCA Principles &amp; Framework</h4>
+          <p>Defines the goal, scope, and overall structure a life cycle assessment must follow.</p>
+        </div>
+        <div class="standards-lib-item">
+          <span class="code">ISO 14044</span>
+          <h4>LCA Requirements &amp; Guidelines</h4>
+          <p>The detailed technical requirements for inventory analysis, impact assessment, and interpretation.</p>
+        </div>
+        <div class="standards-lib-item">
+          <span class="code">ISO 14025</span>
+          <h4>Environmental Labels — Type III</h4>
+          <p>Governs how EPDs are structured, verified, and published under a program operator.</p>
+        </div>
+        <div class="standards-lib-item">
+          <span class="code">ISO 14071</span>
+          <h4>Critical Review Processes</h4>
+          <p>Sets requirements for independent critical review, including reviewer qualifications and panel review.</p>
+        </div>
+        <div class="standards-lib-item">
+          <span class="code">GHG Protocol</span>
+          <h4>Corporate &amp; Product Standards</h4>
+          <p>The most widely used framework for greenhouse gas accounting, covering Scope 1, 2, and 3 emissions.</p>
+        </div>
+        <div class="standards-lib-item">
+          <span class="code">CSRD / ESRS</span>
+          <h4>EU Sustainability Reporting</h4>
+          <p>The EU's corporate sustainability disclosure requirements, including double materiality assessment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Still have questions?</span>
+        <h2>Ask us directly.</h2>
+        <p>If your question isn't covered here, reach out and we'll get back to you within one business day.</p>
+      </div>
+      <a href="index.html#contact" class="btn btn-primary">Get in touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© 2026 Ecoform. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="resources.html">Resources</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

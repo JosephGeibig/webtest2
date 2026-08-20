@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!-- Search-replace "[Company Name]" throughout to set your real company name. Logo mark is a placeholder emblem — swap the <div class="logo-mark"> SVG for your real logo when ready. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecoform — Life Cycle Assessment Consulting</title>
+<meta name="description" content="Ecoform helps manufacturers and brands quantify environmental impact through rigorous, ISO-aligned Life Cycle Assessments, EPDs, and carbon footprinting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <img src="assets/logo.png" width=50>
+      </svg>
+      Ecoform
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="has-dropdown">
+          <a href="about.html">About</a>
+          <ul class="dropdown">
+            <li><a href="about.html#why-we-exist">Why We Exist</a></li>
+            <li><a href="about.html#how-we-serve">How We Serve</a></li>
+            <li><a href="people.html">Meet the Team</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="services.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="services.html#lca">Life Cycle Assessment</a></li>
+            <li><a href="services.html#epd">Environmental Product Declarations</a></li>
+            <li><a href="services.html#carbon">Carbon Footprinting</a></li>
+            <li><a href="services.html#esg">ESG Advisory</a></li>
+            <li><a href="verification.html">Verification &amp; Critical Review</a></li>
+          </ul>
+        </li>
+        <li><a href="industries.html">Industries</a></li>
+        <li class="has-dropdown">
+          <a href="resources.html">Resources</a>
+          <ul class="dropdown">
+            <li><a href="resources.html#faq">FAQ</a></li>
+            <li><a href="resources.html#standards">Standards Library</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="nav-cta">Start a project</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('mobile-open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Life Cycle Assessment Consulting</span>
+        <h1>Know the true footprint of your product — <em>from raw material to end of life.</em></h1>
+        <p class="lead">Ecoform helps manufacturers and brands quantify environmental impact with ISO-aligned Life Cycle Assessments, EPDs, and carbon footprinting — so sustainability claims hold up to scrutiny.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Request an assessment</a>
+          <a href="#approach" class="btn btn-ghost">See our approach</a>
+        </div>
+      </div>
+
+      <div class="diagram-panel">
+        <div class="diagram-label">
+          <span class="title">Product Life Cycle</span>
+          <span class="eyebrow">ISO 14040 / 14044</span>
+        </div>
+        <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing the five stages of a product life cycle: raw materials, manufacturing, distribution, use phase, and end of life, with a recovery loop back to raw materials.">
+          <!-- connecting lines -->
+          <line class="flow-line" x1="70" y1="70" x2="200" y2="70"/>
+          <line class="flow-line" x1="240" y1="70" x2="370" y2="70"/>
+          <line class="flow-line" x1="410" y1="70" x2="480" y2="70"/>
+          <line class="flow-line" x1="520" y1="70" x2="570" y2="70"/>
+
+          <!-- arrowheads -->
+          <path d="M195 65 L205 70 L195 75 Z" fill="var(--ink)"/>
+          <path d="M365 65 L375 70 L365 75 Z" fill="var(--ink)"/>
+          <path d="M475 65 L485 70 L475 75 Z" fill="var(--ink)"/>
+          <path d="M565 65 L575 70 L565 75 Z" fill="var(--ink)"/>
+
+          <!-- nodes -->
+          <circle cx="45" cy="70" r="26" fill="#30641a"/>
+          <circle cx="220" cy="70" r="26" fill="#c4d72e"/>
+          <circle cx="390" cy="70" r="26" fill="#30641a"/>
+          <circle cx="500" cy="70" r="22" fill="#c4d72e"/>
+          <circle cx="600" cy="70" r="26" fill="#30641a"/>
+
+          <text x="45" y="76" text-anchor="middle" class="flow-node-name" fill="#fff">01</text>
+          <text x="220" y="76" text-anchor="middle" class="flow-node-name">02</text>
+          <text x="390" y="76" text-anchor="middle" class="flow-node-name" fill="#fff">03</text>
+          <text x="500" y="76" text-anchor="middle" class="flow-node-name">04</text>
+          <text x="600" y="76" text-anchor="middle" class="flow-node-name" fill="#fff">05</text>
+
+          <text x="45" y="118" text-anchor="middle" class="flow-node-label">Stage 01</text>
+          <text x="45" y="132" text-anchor="middle" class="flow-node-name">Raw Materials</text>
+
+          <text x="220" y="118" text-anchor="middle" class="flow-node-label">Stage 02</text>
+          <text x="220" y="132" text-anchor="middle" class="flow-node-name">Manufacturing</text>
+
+          <text x="390" y="118" text-anchor="middle" class="flow-node-label">Stage 03</text>
+          <text x="390" y="132" text-anchor="middle" class="flow-node-name">Distribution</text>
+
+          <text x="500" y="118" text-anchor="middle" class="flow-node-label">Stage 04</text>
+          <text x="500" y="132" text-anchor="middle" class="flow-node-name">Use Phase</text>
+
+          <text x="600" y="118" text-anchor="middle" class="flow-node-label">Stage 05</text>
+          <text x="600" y="132" text-anchor="middle" class="flow-node-name">End of Life</text>
+
+          <!-- recovery loop -->
+          <path class="flow-loop" d="M600 96 C 600 190, 45 190, 45 96"/>
+          <path d="M52 100 L44 96 L48 106 Z" fill="var(--mid)"/>
+          <text x="322" y="205" text-anchor="middle" class="flow-loop-label">RECOVERY / RECYCLING LOOP</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What we do</span>
+        <h2>Assessment services built for technical rigor and regulatory readiness.</h2>
+        <p>Every engagement follows ISO 14040/14044 methodology, so results hold up under third-party critical review, customer audits, and evolving disclosure regulations.</p>
+        <a href="services.html" class="btn btn-ghost">View all services</a>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="services-grid">
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="4" stroke="#30641a" stroke-width="2"/><path d="M12 24 L18 16 L24 20 L30 12" stroke="#7aa32a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Life Cycle Assessment</h3>
+          <p>Cradle-to-grave or cradle-to-gate modeling that quantifies impacts across carbon, water, and resource categories.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 40 40" fill="none"><rect x="6" y="4" width="28" height="32" rx="3" stroke="#30641a" stroke-width="2"/><line x1="12" y1="14" x2="28" y2="14" stroke="#7aa32a" stroke-width="2"/><line x1="12" y1="20" x2="28" y2="20" stroke="#7aa32a" stroke-width="2"/><line x1="12" y1="26" x2="22" y2="26" stroke="#7aa32a" stroke-width="2"/></svg>
+          <h3>Environmental Product Declarations</h3>
+          <p>Program-operator-ready EPDs that turn your LCA data into a publishable, verifiable disclosure document.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="15" stroke="#30641a" stroke-width="2"/><path d="M20 10 v10 l7 4" stroke="#7aa32a" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <h3>Carbon Footprinting</h3>
+          <p>Operational and embodied carbon accounting aligned to the GHG Protocol, benchmarked against science-based targets.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 40 40" fill="none"><path d="M20 5 L34 12 V22 C34 30 28 35 20 37 C12 35 6 30 6 22 V12 Z" stroke="#30641a" stroke-width="2"/><path d="M14 20 L18 25 L27 15" stroke="#c4d72e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>ESG Advisory</h3>
+          <p>Materiality assessments and reporting support aligned to CSRD, GRI, and SASB frameworks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach" class="approach">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Our process</span>
+        <h2>A methodology that mirrors the product's own life cycle.</h2>
+        <p>We scope the system boundary first, then move stage by stage — so nothing upstream or downstream of your factory gate gets missed.</p>
+      </div>
+      <div class="stage-strip">
+        <div class="stage">
+          <span class="stage-num">01</span>
+          <h4>Goal &amp; Scope</h4>
+          <p>Define functional unit, system boundary, and assessment purpose.</p>
+        </div>
+        <div class="stage">
+          <span class="stage-num">02</span>
+          <h4>Inventory Analysis</h4>
+          <p>Collect primary and secondary data across every input and output.</p>
+        </div>
+        <div class="stage">
+          <span class="stage-num">03</span>
+          <h4>Impact Assessment</h4>
+          <p>Translate inventory data into climate, water, and resource metrics.</p>
+        </div>
+        <div class="stage">
+          <span class="stage-num">04</span>
+          <h4>Interpretation</h4>
+          <p>Identify hotspots and reduction levers specific to your product.</p>
+        </div>
+        <div class="stage">
+          <span class="stage-num">05</span>
+          <h4>Verification</h4>
+          <p>Prepare the study for critical review or third-party certification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section id="industries">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Where we serve</span>
+        <h2>Sustainability expertise across the value chain.</h2>
+        <p>From raw material producers to consumer brands, we've built LCA and carbon programs across a wide range of industries — and we work within the standards each one answers to.</p>
+        <a href="industries.html" class="btn btn-ghost">View all industries</a>
+      </div>
+      <div class="standards-wall">
+        <span class="badge">ISO 14040 / 14044</span>
+        <span class="badge">ISO 14025</span>
+        <span class="badge">GHG Protocol</span>
+        <span class="badge">ACLCA</span>
+        <span class="badge">UL Environment</span>
+        <span class="badge">LEED</span>
+        <span class="badge">Cradle to Cradle</span>
+        <span class="badge">CDP</span>
+        <span class="badge">SASB</span>
+        <span class="badge">SBTi</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section id="credentials">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Track record</span>
+        <h2>Certified practitioners. Standards-aligned work.</h2>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat"><div class="num">250+</div><div class="label">Assessments completed</div></div>
+        <div class="stat"><div class="num">18</div><div class="label">Industries served</div></div>
+        <div class="stat"><div class="num">40+</div><div class="label">EPDs published</div></div>
+        <div class="stat"><div class="num">100%</div><div class="label">ISO 14040/44 aligned</div></div>
+      </div>
+
+      <div class="badge-row">
+        <span class="badge">ACLCA Certified Practitioners</span>
+        <span class="badge">ISO 14040 / 14044</span>
+        <span class="badge">ISO 14025 EPD Programs</span>
+        <span class="badge">GHG Protocol</span>
+        <span class="badge">CSRD Ready</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Client feedback</span>
+        <h2>Trusted by sustainability and product teams.</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p class="quote">"The team scoped our system boundary correctly on the first pass — something two previous consultants got wrong. Our EPD cleared third-party review without a single revision."</p>
+          <div class="who">
+            <div class="avatar"></div>
+            <div><div class="name">Sustainability Director</div><div class="role">Building Products Manufacturer</div></div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="quote">"We needed a defensible carbon number for a customer RFP in six weeks. They delivered on time, and the methodology held up when our customer's own auditors reviewed it."</p>
+          <div class="who">
+            <div class="avatar"></div>
+            <div><div class="name">VP of Operations</div><div class="role">Consumer Packaging Company</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-strip">
+        <span class="client-logo">NORTHFIELD MATERIALS</span>
+        <span class="client-logo">ARCHWAY PACKAGING</span>
+        <span class="client-logo">GRIDLINE INDUSTRIES</span>
+        <span class="client-logo">CEDARPOINT GOODS</span>
+        <span class="client-logo">MERIDIAN TEXTILES</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES / INSIGHTS TEASER -->
+  <section id="insights">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Resources</span>
+        <h2>Straight answers on LCA, EPDs, and reporting.</h2>
+        <p>A growing library of plain-language explainers on the standards and methodologies behind our work.</p>
+      </div>
+      <div class="insights-grid">
+        <div class="insight-card">
+          <span class="eyebrow">FAQ</span>
+          <h3>What's the difference between an LCA and an EPD?</h3>
+          <p>An LCA is the underlying study; an EPD is the standardized document that publishes its results.</p>
+        </div>
+        <div class="insight-card">
+          <span class="eyebrow">FAQ</span>
+          <h3>How long does an assessment take?</h3>
+          <p>Most single-product LCAs run 8–12 weeks from data collection to final report, depending on supply chain complexity.</p>
+        </div>
+        <div class="insight-card">
+          <span class="eyebrow">Standards Library</span>
+          <h3>ISO 14040 / 14044, plain-language guide</h3>
+          <p>A practical walkthrough of what the core LCA standards actually require at each stage.</p>
+        </div>
+      </div>
+      <div style="margin-top: 32px;">
+        <a href="resources.html" class="btn btn-ghost">Browse all resources</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Tell us about your product, and we'll scope the assessment.</h2>
+        <p>Most engagements start with a 30-minute scoping call — no cost, no obligation.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-points">
+          <div class="contact-point">
+            <div class="label">Email</div>
+            <div class="value">hello@[companyname].com</div>
+          </div>
+          <div class="contact-point">
+            <div class="label">Phone</div>
+            <div class="value">(000) 000-0000</div>
+          </div>
+          <div class="contact-point">
+            <div class="label">Office</div>
+            <div class="value">City, State</div>
+          </div>
+        </div>
+
+        <form id="contact-form">
+          <div class="form-row">
+            <div>
+              <label for="fname">First name</label>
+              <input id="fname" name="fname" type="text" placeholder="Jordan" required>
+            </div>
+            <div>
+              <label for="lname">Last name</label>
+              <input id="lname" name="lname" type="text" placeholder="Rivera" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="email">Work email</label>
+              <input id="email" name="email" type="email" placeholder="jordan@company.com" required>
+            </div>
+            <div>
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" placeholder="Company name" required>
+            </div>
+          </div>
+          <div>
+            <label for="message">What product or program do you need assessed?</label>
+            <textarea id="message" name="message" placeholder="Tell us about your product line, target certification, or timeline..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="justify-self: start;">Send message</button>
+          <p class="form-note">Opens your email client with this filled in — nothing is sent until you hit send there.</p>
+        </form>
+        <script>
+          document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var f = event.target;
+            var subject = 'New inquiry from ' + f.fname.value + ' ' + f.lname.value + ' (' + f.company.value + ')';
+            var body = 'Name: ' + f.fname.value + ' ' + f.lname.value +
+                       '\nEmail: ' + f.email.value +
+                       '\nCompany: ' + f.company.value +
+                       '\n\nMessage:\n' + f.message.value;
+            var mailto = 'mailto:hello@[companyname].com' +
+                         '?subject=' + encodeURIComponent(subject) +
+                         '&body=' + encodeURIComponent(body);
+            window.location.href = mailto;
+          });
+        </script>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© 2026 Ecoform. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="resources.html">Resources</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
